@@ -1,0 +1,24 @@
+algoritmo "semnome"
+//  solicite N numeros inteiros e ao final informa o maior e menor número digitado
+var
+x, y, z, m: inteiro
+inicio
+escreval("Informe a quantidade de números: ")
+leia(y)
+para y <-1 ate y faca
+   escreva("Informe o número: ")
+   leia(x)
+   se(y=1)entao
+      z<-x
+   fimse
+   se(x>m) entao
+      m<-x
+   senao
+      se(x<z)entao
+         z<-x
+      fimse
+   fimse
+fimpara
+escreval("O maior número é: ", m)
+escreval("O menor número é: ", z)
+fimalgoritmo

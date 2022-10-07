@@ -1,0 +1,14 @@
+algoritmo "semnome"
+// leia valor de conta de luz e caso seja maior q 80 avisar q esta gastando muito, contrario normal
+var
+x: real
+inicio
+escreva("Informe o valor da conta de luz: ")
+leia(x)
+se(x>80)entao
+    escreval("Você está gastando muito!")
+senao
+     escreval("Seu gasto foi normal!")
+fimse
+fimalgoritmo
+

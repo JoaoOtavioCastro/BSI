@@ -1,0 +1,14 @@
+algoritmo "ex vetor"
+var
+nm:vetor[1..6]de inteiro
+cont : inteiro
+inicio
+
+para cont de 1 ate 5 faca
+   escreval("Informe o numero: ")
+   leia(nm[cont])
+   nm[6]<- nm[6]+nm[cont]
+fimpara
+escreval("A soma é: ", nm[6])
+
+fimalgoritmo

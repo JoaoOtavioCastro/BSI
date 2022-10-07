@@ -1,0 +1,22 @@
+algoritmo "semnome"
+//
+var
+x,y: real
+inicio
+      escreva("Informe o primeira nota: ")
+      leia(x)
+      escreva("Informe o segunda nota: ")
+      leia(y)
+      se(((x+y)/2)>=6)entao
+          escreval("Aluno Aprovado")
+          se(((x+y)/2)>=7)entao
+                escreval("Voce esta de parabens")
+          fimse
+      senao
+           se(((x+y)/2)>=4 e ((x+y)/2)<6)entao
+                escreval("Aluno de IFA")
+           senao
+                escreval("Aluno Reprovado")
+           fimse
+      fimse
+fimalgoritmo

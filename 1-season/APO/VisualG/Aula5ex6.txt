@@ -1,0 +1,16 @@
+algoritmo "semnome"
+// leia matriz 3x3 e escreva elementos da ultima linha
+var
+x : vetor[1..3, 1..3] de inteiro
+y, z: inteiro
+inicio
+para y de 1 ate 3 faca
+   para z de 1 ate 3 faca
+      escreval("Informe o numero: ")
+      leia(x[y,z])
+   fimpara
+fimpara
+para y de 1 ate 3 faca
+   escreval (x[3, y])
+fimpara
+fimalgoritmo

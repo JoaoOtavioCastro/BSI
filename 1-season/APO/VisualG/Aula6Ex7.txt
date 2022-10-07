@@ -1,0 +1,18 @@
+algoritmo "semnome"
+
+var
+a, b: inteiro
+inicio
+escreva("Informe o Ano de Nascimento: ")
+leia(a)
+escreva("Informe o Ano Atual: ")
+leia(b)
+funcao cal_id(a, b:inteiro):inteiro
+var
+i:inteiro
+inicio
+i<- b - a
+retorne i
+fimfuncao
+    escreval("A idade em anos é: ", cal_id(a, b))
+fimalgoritmo

@@ -1,0 +1,19 @@
+algoritmo "semnome"
+
+var
+a: inteiro
+b:real
+inicio
+escreva("Informe o Número de horas trabalhadas: ")
+leia(a)
+escreva("Informe o valor da hora: ")
+leia(b)
+funcao cal_id(a:inteiro;b:real):real
+var
+i:real
+inicio
+i<- b * a
+retorne i
+fimfuncao
+    escreval("O salario é: ", cal_id(a, b))
+fimalgoritmo

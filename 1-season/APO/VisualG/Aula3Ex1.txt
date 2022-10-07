@@ -1,0 +1,23 @@
+algoritmo "semnome"
+// receba valor de venda do mes do vendedor e o nome do mesmo. Quando valor estiver entre 10k e 50k a mensagem: "A venda está ideal".
+// caso menor de 10k apareça: "A venda esta baixa" e acima de 50 "A venda esta ótima
+var
+y : literal
+x : real
+inicio
+escreva("Informe o nome do vendedor: ")
+leia(y)
+escreva("Informe o valor de vendas do mes de ", y)
+leia(x)
+se((x>=10000) e (x<=50000))entao
+    escreval(", A sua venda está ideal!")
+    senao
+          se(x<10000)entao
+                escreval(y, ", A sua venda está baixa")
+          senao
+                escreval(", A sua venda está ótima")
+
+          fimse
+fimse
+
+fimalgoritmo

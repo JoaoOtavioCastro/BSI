@@ -1,0 +1,21 @@
+algoritmo "semnome"
+//solicite números inteios até digitar 0  e mostre maior e menor
+var
+x, y, z : inteiro
+inicio
+x<-1
+z<-99999999
+enquanto x<>0 faca
+   escreva("Informe o número: ")
+   leia(x)
+   se(x>y)entao
+      y<-x
+   fimse
+   se((x<z) e (x<>0))entao
+      z<-x
+   fimse
+
+fimenquanto
+escreval("O maior número digitado foi: ", y)
+escreval("O menor número digitado foi: ", z)
+fimalgoritmo

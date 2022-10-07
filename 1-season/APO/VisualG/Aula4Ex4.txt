@@ -1,0 +1,42 @@
+algoritmo "semnome"
+// pesquisa canal de tv com canais 9 12 23 ou 40
+//leia ate receber 0
+//mostre a % de audiencia de cada emissora
+//caso numero diferente informar como outros
+
+var
+y, z: inteiro
+c1, c2, c3, c4, co : real
+inicio
+y<-1
+z<- -1
+enquanto y<>0 faca
+     escreva("Informe o canal que assiste: ")
+     leia(y)
+     z<-z+1
+     escolha(y)
+     caso 9
+          c1<-c1+1
+     caso 12
+          c2<-c2+1
+     caso 23
+          c3<-c3+1
+     caso 40
+          c4<- c4+1
+     caso 0
+     
+     outrocaso
+          co<-co+1
+     fimescolha
+fimenquanto
+c1<-(c1/z)*100
+c2<-(c2/z)*100
+c3<-(c3/z)*100
+c4<-(c4/z)*100
+co<-(co/z)*100
+escreval("Audiencia do Canal 9: ", c1:2:2, "%")
+escreval("Audiencia do Canal 12: ", c2:2:2, "%")
+escreval("Audiencia do Canal 23: ", c3:2:2, "%")
+escreval("Audiencia do Canal 40: ", c4:2:2, "%")
+escreval("Audiencia de outros canais: ", co:2:2, "%")
+fimalgoritmo
